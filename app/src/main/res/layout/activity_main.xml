@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.orangecoastcollege.cs273.bnguyen336.yarrworld.MainActivity">
+    tools:context="edu.orangecoastcollege.cs273.bnguyen336.yarrworld.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/welcomeLinearLayout"
+    android:weightSum="1">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome_text"
+        android:id="@+id/welcomeTextView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/occ_blue"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_weight="0.25" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pirateImageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/occ_pirate"
+        android:longClickable="false"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:id="@+id/speakButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.25" />
+</LinearLayout>
