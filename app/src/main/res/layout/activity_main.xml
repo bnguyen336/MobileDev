@@ -42,5 +42,6 @@
         android:text="@string/button_text"
         android:id="@+id/speakButton"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.25" />
+        android:layout_weight="0.25"
+        android:textStyle="bold" />
 </LinearLayout>
