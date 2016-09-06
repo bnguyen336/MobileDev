@@ -1,5 +1,6 @@
 package edu.orangecoastcollege.cs273.bnguyen336.yarrworld;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,7 +10,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //Define the button as an instance variable (number)
-    Button speakButton;
+    private Button speakButton;
+    private Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Hook up speakButton to the one in our view
         speakButton = (Button) findViewById(R.id.speakButton);
+        //Bind onClick event to speakButton
         speakButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, R.string.toast_text, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Context, String, Length)
+                //Use the static reference to "Toast" to display the message;
+                //Toast vanishes over time
+                Toast.makeText(context, R.string.toast_text, Toast.LENGTH_LONG).show();
             }
         });
     }
