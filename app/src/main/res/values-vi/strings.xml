@@ -4,4 +4,5 @@
     <string name="welcome_text">Chao mung den voi CS273 - Lap trinh ung dung</string>
     <string name="toast_text">Hey ho!</string>
     <string name="button_text">Biet chet lien</string>
+    <string name="pirate_image_description">Logo hai tac cua Orange Coast College</string>
 </resources>

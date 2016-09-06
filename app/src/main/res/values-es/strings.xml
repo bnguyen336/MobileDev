@@ -4,4 +4,5 @@
     <string name="welcome_text">Bienvenido a CS 273 - Desarrollo de aplicaciones móviles</string>
     <string name="toast_text">Yarr mundo!</string>
     <string name="button_text">TIEMBLA LAS MADERAS</string>
+    <string name="pirate_image_description">Logotipo del pirata de Orange Coast College</string>
 </resources>
